@@ -24,10 +24,18 @@ class Router{
         
         if($metodo === 'GET'){
             $urlActual = explode('?',$urlActual)[0];
+            $urlActual = rtrim($urlActual, '/');
+            if($urlActual === ''){
+                $urlActual = '/';
+            }
             $fn = $this->rutasGET[$urlActual] ?? null;        
             
         } else{
             $urlActual = explode('?',$urlActual)[0];
+            $urlActual = rtrim($urlActual, '/');
+            if($urlActual === ''){
+                $urlActual = '/';
+            }
             $fn = $this->rutasPOST[$urlActual] ?? null;
         }
        

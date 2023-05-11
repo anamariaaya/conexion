@@ -1,6 +1,259 @@
-body{
-    background-color: gold;
-}
-h1{
-    color: red;
-}
+/* 
+//////////////////////////////////////
+    CSS GLOBAL
+        *Fuentes
+        *Tamaño de Media Queries
+        *Grosor de fuentes
+        *Colores
+        *Sombras
+        *Bordes
+        *Medidas
+        *Botones
+    //////////////////////////////////////
+    SECTIONS
+        *Header
+        *Footer
+        *Main
+        *Cards
+        *Fixed Section
+        *Forms
+        *Banners
+//////////////////////////////////////
+*/
+
+/* CSS GLOBAL
+//////////////////////////////////////
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+// Fuentes
+$fuente: 'Poppins', sans-serif;
+
+// Tamaño de Media Queries
+$mini: 280px;
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$bigScreen: 1250px;
+$ultraWide: 1440px;
+$giant: 2200px;
+
+// Grosor de fuentes
+$thin: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+//fondo
+$background_color: #FFFFFF;
+
+// Colores
+$brand_color: #02B665;
+$brand_color_hover: #02B665;
+$brand_color_active: #02B665;
+$brand_color_disabled: #ACACAC;
+$brand_color_text: #FFFFFF;
+
+$brand_color--1: #039E00;
+$brand_color--1_hover: #039E00;
+$brand_color--1_active: #039E00;
+$brand_color--1_disabled: #ACACAC;
+$brand_color--1_text: #FFFFFF;
+
+$brand_color--2: #000000;
+$brand_color--2_hover: #000000;
+$brand_color--2_active: #000000;
+$brand_color--2_disabled: #ACACAC;
+$brand_color--2_text: #FFFFFF;
+
+$brand_color--3: #1A4715;
+
+$partner_color: #0E029A;
+
+$font_color: #000000;
+$font_color--1: #FFFFFF;
+$font_color--2: #02B665;
+$font_color--3: #039E00;
+$font_color--4: #1A4715;
+$font_input: #D9D9D9;
+$font_disabled: #ACACAC;
+
+
+$alert_success: #09b328;
+$alert_error: #a30606;
+
+//Sombras
+$shadow: 1rem 0.9rem 1.4rem rgba(172, 161, 161, 0.5);
+$shadow--1: 0.7rem 1rem 0.8rem rgba(172, 161, 161, 0.5);
+$shadow--2: 0.8rem 1.1rem 1.2rem rgba(172, 161, 161, 0.5);
+
+//Bordes
+$border-radius: 1rem;
+$border-radius--1: 2.5rem;
+$border-radius--2: 3.5rem;
+
+$border-color: #D9D9D9;
+$border-width: 0.1rem;
+$border-width--1: 0.3rem;
+$border-style: solid;
+
+//Medidas
+$gap: 5rem;
+
+//botones
+$btn_background: $brand_color;
+$btn_background_hover: $brand_color_hover;
+$btn_background_active: $brand_color_active;
+$btn_background_disabled: $brand_color_disabled;
+$btn_background_text: $brand_color_text;
+
+$btn_background--1: $brand_color--1;
+$btn_background--1_hover: $brand_color--1_hover;
+$btn_background--1_active: $brand_color--1_active;
+$btn_background--1_disabled: $brand_color--1_disabled;
+$btn_background--1_text: $brand_color--1_text;
+
+$btn_background--2: $brand_color--2;
+$btn_background--2_hover: $brand_color--2_hover;
+$btn_background--2_active: $brand_color--2_active;
+$btn_background--2_disabled: $brand_color--2_disabled;
+$btn_background--2_text: $brand_color--2_text;
+
+/* SECTIONS
+//////////////////////////////////////
+*/
+
+//Header
+$header_background: transparent;
+$header_background--1: $brand_color--2;
+$header_height: 70vh;
+$header_title: $font_color--1;
+$header_title_weight: $bold;
+
+$header_color: $font_color--1;
+$header_color_hover: $font_color--1;
+$header_color_active: $font_color--1;
+$header_color_disabled: $font_disabled;
+
+$header_img_width: 100%;
+$header_img_height: 100%;
+$header_img_size: cover;
+$header_img_position: center center;
+$header_img_repeat: no-repeat;
+
+$header_overlay: linear-gradient(180deg, $brand_color 28.91%, transparent 100%);
+$header_overlay_width: 100%;
+$header_overlay_height: 100%;
+
+$header-button_radius: $border-radius;
+$header_button: $brand_color--1;
+$header_button_hover: $brand_color--1_hover;
+$header_button_active: $brand_color--1_active;
+$header_button_disabled: $brand_color--1_disabled;
+$header_button_text: $brand_color--1_text;
+
+$header_button--1: $brand_color--2;
+$header_button--1_hover: $brand_color--2_hover;
+$header_button--1_active: $brand_color--2_active;
+$header_button--1_disabled: $brand_color--2_disabled;
+$header_button--1_text: $brand_color--2_text;
+
+//Footer
+$footer_background: $brand_color--2;
+$footer_height: 59rem;
+
+$footer_color: $font_color--1;
+$footer_color_hover: $font_color--1;
+$footer_color_active: $font_color--1;
+$footer_color_disabled: $font_disabled;
+
+$footer_button: $brand_color--1;
+$footer_button_hover: $brand_color--1_hover;
+$footer_button_active: $brand_color--1_active;
+$footer_button_disabled: $brand_color--1_disabled;
+$footer_button_text: $brand_color--1_text;
+
+//Main
+$main_width: 80%;
+
+$main_title: $font_color;
+$main_text--1: $font_color;
+$main_title_weight: $bold;
+$main_title_size: 5rem;
+
+$main_title--1: $font_color--4;
+$main_title--1_weight: $semibold;
+$main_title--1_size: 2.5rem;
+
+$main_button: $brand_color;
+$main_button_hover: $brand_color_hover;
+$main_button_active: $brand_color_active;
+$main_button_disabled: $brand_color_disabled;
+$main_button_border_radius: $border-radius--2;
+$main_button_text: $brand_color_text;
+$main_button_icon: $font_color--1;
+$main_button_icon_size: 6rem;
+
+//Cards
+$card_background: $background_color;
+$card_shadow: $shadow;
+$card_border_radius: $border-radius--2;
+
+$card_title: $font_color--2;
+$card_title_weight: $bold;
+$card_title_icon: $brand_color;
+$card_text: $font_color;
+
+//Fixed Section
+$fixed_section_background: $brand_color;
+$fixed_section_height: 92rem;
+$fixed_section_text: $font_color--1;
+
+$fixed_section_title: $font_color--1;
+$fixed_section_title_weight: $bold;
+$fixed_section_title_size: 5rem;
+
+$fixed_section_button: $brand_color--2;
+$fixed_section_button_hover: $brand_color--2_hover;
+$fixed_section_button_active: $brand_color--2_active;
+$fixed_section_button_disabled: $brand_color--2_disabled;
+
+//Forms
+$form_background: $background_color;
+$form_shadow: $shadow--2;
+
+$form_title: $font_color--4;
+$form_title_weight: $bold;
+$form_title_size: 4rem;
+
+$label_text: transparent;
+$label_text_weight: $bold;
+$label_text_size: 1.6rem;
+
+$input_background: $background_color;
+$input_border: $border-color;
+$input_border_width: $border-width;
+$input_border_style: $border-style;
+$input_border_radius: $border-radius;
+
+$input_text: $font_input;
+$input_text_weight: $thin;
+$input_text_size: 1.2rem;
+
+$input_submit: $brand_color--1;
+$input_submit_hover: $brand_color--1_hover;
+$input_submit_active: $brand_color--1_active;
+$input_submit_disabled: $brand_color--1_disabled;
+$input_submit_text: $brand_color--1_text;
+
+$input_submit--1: $brand_color--2;
+$input_submit--1_hover: $brand_color--2_hover;
+$input_submit--1_active: $brand_color--2_active;
+$input_submit--1_disabled: $brand_color--2_disabled;
+$input_submit--1_text: $brand_color--2_text;
+
+//Banners
+$banner_background: $brand_color;
+$banner_height: 35rem;
+$banner_width: 100%;
+$banner_text: $font_color--1;

@@ -1,0 +1,8 @@
+@use "sass:math";
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.wrapper {
+    width: v.$main_width;
+    margin: 0 auto;
+}

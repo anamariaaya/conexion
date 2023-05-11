@@ -1,0 +1,73 @@
+@use "sass:math";
+@use 'variables' as v;
+
+/** Media Queries **/
+
+@mixin mini {
+    @media (min-width: #{v.$mini}) {
+        @content;
+    }
+}
+
+@mixin telefono {
+    @media (min-width: #{v.$telefono}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{v.$tablet}) {
+        @content;
+    }
+}
+  
+@mixin desktop {
+    @media (min-width: #{v.$desktop}) {
+        @content;
+    }
+}
+
+@mixin bigScreen {
+    @media (min-width: #{v.$bigScreen}) {
+        @content;
+    }
+}
+
+@mixin ultraWide {
+    @media (min-width: #{v.$ultraWide}) {
+        @content;
+    }
+}
+
+@mixin giant {
+    @media (min-width: #{v.$giant}) {
+        @content;
+    }
+}
+
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin boton($bgColor, $txtColor, $display, $radius){
+    background-color: $bgColor;
+    color: $txtColor;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    display: $display;
+    border: none;
+    border-radius: $radius;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@mixin card($shadow){
+    box-shadow: $shadow;
+    border-radius: v.$border-radius--2;
+    border-style: v.$border-style;
+    border-width: v.$border-width;
+}
