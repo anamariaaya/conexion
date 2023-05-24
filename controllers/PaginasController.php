@@ -23,8 +23,10 @@ class PaginasController{
     }
 
     public static function otraprueba(Router $router){
+        $main_title = 'Otra prueba';
         $router->render('paginas/otraprueba',[
-            'titulo' => 'Otra prueba'
+            'titulo' => 'Otra prueba',
+            'main_title' => $main_title
         ]);
     }
 }

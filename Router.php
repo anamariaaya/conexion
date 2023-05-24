@@ -45,7 +45,7 @@ class Router{
         } else{
             //la URL no existe
             //incluir el template 404error.php dentro de layouts/main-layout.php como el contenido
-            echo $this->render('/templates/404error');
+            echo $this->render('templates/404error');
         }
 
     }
