@@ -5,6 +5,7 @@
 .footer{
     background-color: v.$footer_background;
     height: v.$footer_height;
+    padding: v.$gap;
     color: v.$footer_color;
     .footer__button{
         background-color: v.$footer_button;
@@ -17,6 +18,83 @@
         }
         &:disabled{
             background-color: v.$footer_button_disabled;
+        }
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        &__logo{
+            max-width: 20rem;
+        }
+        &__info{
+            margin: calc(v.$gap / 2) 0;
+            border-right: v.$border-width v.$border-style v.$border-color;
+            &--title{
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+            }
+            &--text{
+                font-size: 1.8rem;
+                margin: .5rem 0;
+                color: v.$font_color--1;
+            }
+            &--sede{
+                font-size: 1.6rem;
+                margin: 0;
+                color: v.$font_color--1;
+                font-weight: v.$thin;
+                span{
+                    text-transform: uppercase   ;
+                    font-weight: v.$semibold;
+                }
+            }
+            &--address{
+                @include m.grid(3, 3.5rem);
+                margin: calc(v.$gap + 2.5rem) 0;
+            }
+        }
+        &__social{
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            gap: 1rem;
+            padding: 2.5rem 0 0 2.5rem;
+            &--media{
+                display: flex;
+                gap: 2rem;
+                i{
+                    color: v.$font_color--1;
+                    font-size: 3rem;
+                }
+            }
+            &--link{
+                color: v.$font_color--1;
+            }
+            &--copy{
+                color: v.$font_color--1;
+                font-size: 1.4rem;
+                margin: 0;
+                &:first-of-type{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+    &__links{
+        @include m.tablet{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        &__link{
+            @include m.boton(v.$footer_button, v.$footer_button_text, inline-block, v.$border_radius, v.$regular);
+            padding: 1rem;
+            &::first-letter{
+                text-transform: uppercase;
+            }
         }
     }
 }

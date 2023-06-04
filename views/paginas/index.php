@@ -33,7 +33,7 @@
         <li>
             <a href="" class="index-menu__btn">
                 <img src="/build/img/icono-mantenimiento.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
-                <p class="index-menu__text">Outsourcing mantenimiento</p>
+                <p class="index-menu__text">Servicios especializados de limpieza</p>
             </a>
         </li>
     </ul>
@@ -91,7 +91,12 @@
 </main>
 
 <div class="home-banner">
-    <h3 class="home-banner__title">​Conexión Outsourcing S.A.S, en coordinación con su administradora de Riesgos Laborales, planea un cronograma semestral de actividades donde se incluye la capacitación a todo nuestro personal, en lo referente a Limpieza.</h3>
+    <div class="home-banner__flex wrapper">
+    <h3 class="home-banner__title">Responsabilidad social empresarial</h3>
+    <p class="home-banner__text">En Conexion Outsourcing SAS invertimos en nuestro talento humano, procurando  el mejoramiento de las competencias de nuestros colaboradores.</p>
+    <p class="home-banner__text"><span>"Amamos lo que hacemos. Unimos esfuerzos para hacer de Colombia un país mejor"</span></p>
+    <a href="" class="btn-video">Ver video</a>
+    </div>
 </div>
 
 <div class="home-services">
@@ -125,7 +130,7 @@
             </a>
             <a href="">
                 <div class="home-services__card">
-                    <img class="home-services__image" src="/build/img/main-serv-servicios.webp" alt="imagen de serctor servicios" loading="lazy"/>
+                    <img class="home-services__image" src="/build/img/main-serv-servicios.webp" alt="imagen de sector servicios" loading="lazy"/>
                     <p class="home-services__text">Sector Servicios</p>
                 </div>
             </a>
@@ -140,39 +145,74 @@
 </div>
 
 <div class="home-services--other">
-    <h2 class="home-services__title">Otros Servicios</h2>
+    <h2 class="home-services--other__title">Otros Servicios</h2>
     <div class="wrapper">
         <div class="home-services--other__flex">
             <a href="" class="home-services--other__card">
                 <div>
-                    <img class="home-services__image" src="/build/img/main-serv-comercial.webp" alt="imagen de sector comercial" loading="lazy"/>
-                    <p class="home-services__text">Sector Comercial</p>
+                    <img class="home-services__image" src="/build/img/main-serv-rrhh.webp" alt="imagen de recursos humanos" loading="lazy"/>
+                    <p class="home-services__text">Outsourcing Recursos Humanos</p>
                 </div>
             </a>
             <a href="" class="home-services--other__card">
                 <div>
-                    <img class="home-services__image" src="/build/img/.webp" alt="imagen de sector educativo" loading="lazy"/>
-                    <p class="home-services__text">Sector Educativo</p>
+                    <img class="home-services__image" src="/build/img/main-serv-nomina.webp" alt="imagen de nómina" loading="lazy"/>
+                    <p class="home-services__text">Outsourcing Nómina</p>
                 </div>
             </a>
             <a href="" class="home-services--other__card">
                 <div>
-                    <img class="home-services__image" src="/build/img/.webp" alt="imagen de conjuntos residenciales" loading="lazy"/>
-                    <p class="home-services__text">Conjuntos residenciales</p>
+                    <img class="home-services__image" src="/build/img/main-serv-hotelero2.webp" alt="imagen de outsourcing hotelero" loading="lazy"/>
+                    <p class="home-services__text">Outsourcing Hotelero</p>
                 </div>
             </a>
             <a href="" class="home-services--other__card">
                 <div>
-                    <img class="home-services__image" src="/build/img/.webp" alt="imagen de sector salud" loading="lazy"/>
-                    <p class="home-services__text">Sector Salud</p>
+                    <img class="home-services__image" src="/build/img/main-serv-callcenter.webp" alt="imagen de Call center" loading="lazy"/>
+                    <p class="home-services__text">Outsourcing Call center bilingüe</p>
                 </div>
             </a>
             <a href="" class="home-services--other__card">
                 <div>
-                    <img class="home-services__image" src="/build/img/.webp" alt="imagen de serctor servicios" loading="lazy"/>
-                    <p class="home-services__text">Sector Servicios</p>
+                    <img class="home-services__image" src="/build/img/main-serv-mantenimiento.webp" alt="imagen de Mantenimiento" loading="lazy"/>
+                    <p class="home-services__text">Outsourcing Mantenimiento</p>
                 </div>
             </a>
         </div>
+    </div>
+</div>
+
+<div class="home-banner--partner">
+    <h3 class="home-banner--partner__title">Nuestra empresa aliada</h3>
+    <a href="https://www.asignar.com.co" target="_blank" rel="noopener noreferrer">
+        <img class="home-banner--partner__image" src="/build/img/logo-asignar.svg" alt="logo de Asignar SAS" loading="lazy"/>
+    </a>
+</div>
+
+<div class="home-clientes">
+    <div class="wrapper home-clientes__flex">
+        <img src="/build/img/logo-1.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-2.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-3.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-4.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-5.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-6.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-7.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-8.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-9.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-10.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-11.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-12.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-13.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-14.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-15.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-16.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-17.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-18.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-19.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-20.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-21.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-22.webp" alt="logo de cliente" loading="lazy">
+        <img src="/build/img/logo-23.webp" alt="logo de cliente" loading="lazy">
     </div>
 </div>

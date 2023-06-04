@@ -25,9 +25,9 @@
         transition: all 0.3s ease;
         height: 100%;
         width: 100%;
-        min-height: 20rem;
-        max-width: 20rem;
-        min-width: 20rem;
+        min-height: 18rem;
+        max-width: 18rem;
+        min-width: 18rem;
         overflow-wrap: break-word;
         transform: translate(0, -50%);
         &:hover{
@@ -52,7 +52,7 @@
 
 .home-main{
     &__title{
-        font-size: 4rem;
+        font-size: 3.6rem;
         font-weight: v.$main_title_weight;
         text-align: center;
         margin-bottom: 5rem;
@@ -96,6 +96,12 @@
         }
         &__list{
             list-style-image: url('../img/icono-check.webp');
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            li{
+                font-size: 1.8rem;
+            }
         }
     }
 }
@@ -107,34 +113,49 @@
     background-position: center center;
     background-repeat: no-repeat;
     margin: calc(v.$gap * 2) 0;
-    display: grid;
-    place-items: center;
+    &__flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
     &__title{
-        font-size: 4rem;
         font-weight: v.$banner_title_weight;
         text-align: center;
         color: v.$banner_title;
         font-size: v.$banner_title_size;
+        text-transform: uppercase;
+    }
+    &__text{
+        font-weight: v.$banner_text_weight;
+        text-align: center;
+        color: v.$banner_text;
+        font-size: v.$banner_text_size;
         padding: v.$banner_title_padding;
+        margin: 0;
+        span{
+            font-style: italic;
+        }
     }
 }
 
 .home-services{
     &__title{
         color: v.$font_color--4;
-        font-size: 4rem;
+        font-size: 3.6rem;
         text-align: center;
         font-weight: v.$bold;
     }
     &__subtitle{
         color: v.$font_color--2;
-        font-size: 3.6rem;
+        font-size: 3.2rem;
         text-align: center;
     }
     &__grid{
-        //@include m.grid(3, v.$gap);
+        width: 90%;
         display: grid;
-        margin: calc(v.$gap * 2) 0;
+        margin: calc(v.$gap * 2) auto;
         gap: v.$gap;
         grid-template-columns: repeat(3, auto);
     }
@@ -145,6 +166,9 @@
         border-color: v.$border-color--1;
         border-width: v.$border-width--2;
         border-style: v.$border-style;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     &__text{
         border-top-color: v.$border-color--1;
@@ -157,16 +181,22 @@
         text-align: center;
     }
     &__image{
-        min-width: 38rem;
-        height: 40rem;
+        min-width: 30rem;
+        height: 28rem;
         object-fit: cover;
     }
     &--other{
         background-color: #ECFFF6;
+        padding: v.$gap 0;
+        &__title{
+            @extend .home-services__title;
+            margin-bottom: v.$gap;
+        }
         &__flex{
+            width: 90%;
             display: flex;
             flex-wrap: wrap;
-            column-gap: calc(v.$gap * 3);
+            column-gap: calc(v.$gap * 2);
             row-gap: v.$gap;
             margin: auto;
             justify-content: center;
@@ -178,6 +208,56 @@
             flex-basis: 0;
             min-width: 25%;
             max-width: 30rem;
+        }
+    }
+}
+
+.home-banner--partner{
+    height: v.$banner_height;
+    background: v.$banner_background_linear;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: calc(v.$gap * 2) 0;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding: v.$gap;
+    place-items: center;
+    &__title{
+        width: 100%;
+        height: 100%;
+        border-right: 0.2rem solid v.$border-color;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: v.$banner_title;
+        font-size: v.$banner_title_size--1;
+        font-weight: v.$banner_title_weight;
+    }
+    img{
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+}
+
+.home-clientes{
+    &__flex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        column-gap: calc(v.$gap + 2.5rem);
+        row-gap: v.$gap;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: v.$gap;
+        img{
+            max-height: 12.5rem;
+            height: fit-content;
+            width: auto;
         }
     }
 }

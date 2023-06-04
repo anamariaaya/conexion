@@ -51,18 +51,25 @@
     grid-template-columns: repeat($columnas, 1fr);
 }
 
-@mixin boton($bgColor, $txtColor, $display, $radius){
+@mixin boton($bgColor, $txtColor, $display, $radius, $weight){
+    border: none;
+    cursor: pointer;
     background-color: $bgColor;
     color: $txtColor;
-    text-decoration: none;
-    padding: 1rem 3rem;
-    text-align: center;
-    display: $display;
-    border: none;
     border-radius: $radius;
+    padding: 1rem 5rem;
+    text-align: center;
+    font-weight: $weight;
+    transition: all 0.3s ease;
     &:hover{
-        cursor: pointer;
+        background-color: v.$btn_background--3_hover;
     }
+    &:active{
+        background-color: v.$btn_background--3_active;
+    }
+    &:disabled{
+        background-color: v.$btn_background--3_disabled;
+        }
 }
 
 @mixin card($shadow){

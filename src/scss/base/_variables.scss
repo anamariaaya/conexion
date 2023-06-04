@@ -67,6 +67,10 @@ $brand_color--2_disabled: #ACACAC;
 $brand_color--2_text: #FFFFFF;
 
 $brand_color--3: #1A4715;
+$brand_color--3_hover: #1A4715;
+$brand_color--3_active: #1A4715;
+$brand_color--3_disabled: #ACACAC;
+$brand_color--3_text: #FFFFFF;
 
 $partner_color: #0E029A;
 
@@ -75,7 +79,7 @@ $font_color--1: #FFFFFF;
 $font_color--2: #02B665;
 $font_color--3: #039E00;
 $font_color--4: #1A4715;
-$font_input: #D9D9D9;
+$font_input: $font_color;
 $font_disabled: #ACACAC;
 
 
@@ -121,6 +125,13 @@ $btn_background--2_active: $brand_color--2_active;
 $btn_background--2_disabled: $brand_color--2_disabled;
 $btn_background--2_text: $brand_color--2_text;
 
+$btn_background--3: $brand_color--3;
+$btn_background--3_hover: darken($brand_color--3_hover, 5);
+$btn_background--3_active: $brand_color--3_active;
+$btn_background--3_disabled: $brand_color--3_disabled;
+$btn_background--3_text: $brand_color--3_text;
+
+
 /* SECTIONS
 //////////////////////////////////////
 */
@@ -155,14 +166,14 @@ $header_button_disabled: $brand_color--1_disabled;
 $header_button_text: $brand_color--1_text;
 
 $header_button--1: $brand_color--2;
-$header_button--1_hover: $brand_color--2_hover;
-$header_button--1_active: $brand_color--2_active;
+$header_button--1_hover: $brand_color--1_hover;
+$header_button--1_active: $brand_color--1_active;
 $header_button--1_disabled: $brand_color--2_disabled;
 $header_button--1_text: $brand_color--2_text;
 
 //Footer
 $footer_background: $brand_color--2;
-$footer_height: 59rem;
+$footer_height: auto;
 
 $footer_color: $font_color--1;
 $footer_color_hover: $font_color--1;
@@ -176,7 +187,7 @@ $footer_button_disabled: $brand_color--1_disabled;
 $footer_button_text: $brand_color--1_text;
 
 //Main
-$main_width: 90%;
+$main_width: 85%;
 
 $main_title: $font_color;
 $main_text--1: $font_color;
@@ -188,13 +199,13 @@ $main_title--1_weight: $semibold;
 $main_title--1_size: 2.5rem;
 
 $main_button: $brand_color;
-$main_button_hover: $brand_color_hover;
+$main_button_hover: $brand_color--3;
 $main_button_active: $brand_color_active;
 $main_button_disabled: $brand_color_disabled;
 $main_button_border_radius: $border-radius--2;
 $main_button_text: $brand_color_text;
 $main_button_icon: $font_color--1;
-$main_button_icon_size: 6rem;
+$main_button_icon_size: 5rem;
 
 //Cards
 $card_background: $background_color;
@@ -205,11 +216,11 @@ $card_title: $font_color--2;
 $card_title_weight: $bold;
 $card_title_icon: $brand_color;
 $card_text: $font_color;
-$card_icon_size: 8rem;
+$card_icon_size: 7rem;
 
 //Fixed Section
 $fixed_section_background: $brand_color;
-$fixed_section_height: 92rem;
+$fixed_section_height: 100%;
 $fixed_section_text: $font_color--1;
 
 $fixed_section_title: $font_color--1;
@@ -238,10 +249,11 @@ $input_border: $border-color;
 $input_border_width: $border-width;
 $input_border_style: $border-style;
 $input_border_radius: $border-radius;
+$input_width: 100%;
 
 $input_text: $font_input;
 $input_text_weight: $thin;
-$input_text_size: 1.2rem;
+$input_text_size: 1.6rem;
 
 $input_submit: $brand_color--1;
 $input_submit_hover: $brand_color--1_hover;
@@ -257,9 +269,14 @@ $input_submit--1_text: $brand_color--2_text;
 
 //Banners
 $banner_background: $brand_color;
-$banner_height: 35rem;
+$banner_background_linear: linear-gradient(to right, #54AF33, #0E029A);
+$banner_height: 32rem;
 $banner_width: 100%;
 $banner_title: $font_color--1;
 $banner_title_weight: $bold;
-$banner_title_size: 2.6rem;
-$banner_title_padding: 0 17%;
+$banner_title_size: 3.2rem;
+$banner_title_size--1: 4rem;
+$banner_title_padding: 0 10%;
+$banner_text: $font_color--1;
+$banner_text_weight: $thin;
+$banner_text_size: 2rem;
