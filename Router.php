@@ -24,10 +24,18 @@ class Router{
         
         if($metodo === 'GET'){
             $urlActual = explode('?',$urlActual)[0];
+            $urlActual = rtrim($urlActual, '/');
+            if($urlActual === ''){
+                $urlActual = '/';
+            }
             $fn = $this->rutasGET[$urlActual] ?? null;        
             
         } else{
             $urlActual = explode('?',$urlActual)[0];
+            $urlActual = rtrim($urlActual, '/');
+            if($urlActual === ''){
+                $urlActual = '/';
+            }
             $fn = $this->rutasPOST[$urlActual] ?? null;
         }
        
@@ -37,7 +45,7 @@ class Router{
         } else{
             //la URL no existe
             //incluir el template 404error.php dentro de layouts/main-layout.php como el contenido
-            echo $this->render('/templates/404error');
+            echo $this->render('templates/404error');
         }
 
     }

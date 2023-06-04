@@ -1,0 +1,97 @@
+@use "sass:math";
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contacto{
+    background-color: v.$fixed_section_background;
+    min-height: v.$fixed_section_height;
+    padding: 5rem 0;
+    &__grid{
+        display: grid;
+        @include m.grid(2, 0);
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    &__form{
+        background-color: v.$form_background;
+        border-radius: v.$border_radius;
+        padding: 1.5rem;
+        width: 40rem;
+        margin: auto;
+        &--shadow{
+            box-shadow: v.$form_shadow;
+        }
+        &__img{
+            width: auto;
+            height: 10rem;
+            display: block;
+            margin: auto;
+        }
+        &__legend{
+            color: v.$form_title;
+        }
+        &__fieldset{
+            border: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            label{
+                visibility: hidden;
+            }
+            input:not([type='submit']), textarea{
+                background-color: v.$input_background;
+                border: v.$input_border_width v.$input_border_style v.$input_border;
+                border-radius: v.$input_border_radius;
+                padding: 1rem;
+                color: v.$input_text;
+                font-size: v.$input_text_size;
+                font-weight: v.$input_text_weight;
+                min-width: v.$input_width;
+                &:focus{
+                    outline: none;
+                    border-color: v.$input_submit;
+                }
+            }
+            textarea{
+                resize: none;
+                min-height: 10rem;
+            }
+        }
+        &__btn{
+            margin-top: 1.5rem;
+            background-color: v.$input_submit;
+            color: v.$input_submit_text;
+            border: none;
+            font-size: 2.2rem;
+            padding: 1rem;
+            border-radius: v.$border_radius;
+            display: block;
+            cursor: pointer;
+            &:hover{
+                background-color: v.$input_submit_hover;
+            }
+            &:active{
+                background-color: v.$input_submit_active;
+            }
+            &:disabled{
+                background-color: v.$input_submit_disabled;
+            }
+        }
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &__title{
+            font-size: v.$fixed_section_title_size;
+            font-weight: v.$fixed_section_title_weight;
+            color: v.$fixed_section_title;
+        }
+        &__p{
+            color: v.$fixed_section_text;
+        }
+    }
+}

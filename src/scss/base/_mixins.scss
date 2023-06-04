@@ -1,0 +1,79 @@
+@use "sass:math";
+@use 'variables' as v;
+
+/** Media Queries **/
+
+@mixin mini {
+    @media (min-width: #{v.$mini}) {
+        @content;
+    }
+}
+
+@mixin telefono {
+    @media (min-width: #{v.$telefono}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{v.$tablet}) {
+        @content;
+    }
+}
+  
+@mixin desktop {
+    @media (min-width: #{v.$desktop}) {
+        @content;
+    }
+}
+
+@mixin bigScreen {
+    @media (min-width: #{v.$bigScreen}) {
+        @content;
+    }
+}
+
+@mixin ultraWide {
+    @media (min-width: #{v.$ultraWide}) {
+        @content;
+    }
+}
+
+@mixin giant {
+    @media (min-width: #{v.$giant}) {
+        @content;
+    }
+}
+
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin boton($bgColor, $txtColor, $display, $radius, $weight){
+    border: none;
+    cursor: pointer;
+    background-color: $bgColor;
+    color: $txtColor;
+    border-radius: $radius;
+    padding: 1rem 5rem;
+    text-align: center;
+    font-weight: $weight;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: v.$btn_background--3_hover;
+    }
+    &:active{
+        background-color: v.$btn_background--3_active;
+    }
+    &:disabled{
+        background-color: v.$btn_background--3_disabled;
+        }
+}
+
+@mixin card($shadow){
+    box-shadow: $shadow;
+    border-radius: v.$border-radius--2;
+    border-style: v.$border-style;
+}

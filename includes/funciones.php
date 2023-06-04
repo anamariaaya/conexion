@@ -66,3 +66,17 @@ function sesionActiva($var){
         echo '/admin/dashboard';
     }
 }
+
+function getPathComponent() {
+    $parsedUrl = parse_url($_SERVER['REQUEST_URI']);
+    $path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
+    $path = ltrim($path, '/'); // Remove the leading slash
+    $path = rtrim($path, '/'); // Remove the trailing slash
+
+    return $path;
+}
+
+function headerImg(){
+    $path = getPathComponent();    
+    echo $path;
+}

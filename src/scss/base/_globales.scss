@@ -1,0 +1,54 @@
+@use "sass:math";
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ul, li {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: v.$fuente;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    position: relative;
+}
+
+p {
+    color: v.$font_color;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+}
+
+h1, h2{
+    font-weight: v.$bold;
+}
+
+h3, h4{
+    font-weight: v.$regular;
+}
