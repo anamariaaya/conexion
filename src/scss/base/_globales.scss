@@ -27,7 +27,16 @@ body {
 
 p {
     color: v.$font_color;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    @include m.tablet{
+        font-size: 1.6rem;
+    }
+    @include m.desktop{
+        font-size: 1.8rem;
+    }
+    @include m.bigScreen{
+        font-size: 2rem;
+    }
 }
 
 a {

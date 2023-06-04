@@ -1,7 +1,7 @@
 <form class="contacto__form <?php echo !$inicio ? 'contacto__form--shadow' : '' ?>">
     <img class="contacto__form__img" src="/build/img/logo-contacto.svg" alt="Contacto" loading="lazy">
     <?php
-    if(!$inicio):?>
+    if(!isset($inicio)):?>
         <legend class="contacto__form__legend">Contáctanos</legend>
     <?php endif?>
     <fieldset class="contacto__form__fieldset">

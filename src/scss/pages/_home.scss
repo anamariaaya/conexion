@@ -14,7 +14,7 @@
         background-color: v.$main_button;
         color: v.$main_button_text;
         border-radius: v.$main_button_border_radius;
-        padding: 3rem 3rem 2rem 3rem;
+        padding: 2rem;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -25,9 +25,9 @@
         transition: all 0.3s ease;
         height: 100%;
         width: 100%;
-        min-height: 18rem;
-        max-width: 18rem;
-        min-width: 18rem;
+        min-height: 12rem;
+        max-width: 12rem;
+        min-width: 14rem;
         overflow-wrap: break-word;
         transform: translate(0, -50%);
         &:hover{
@@ -38,40 +38,64 @@
         }
         &:disabled{
             background-color: v.$main_button_disabled;
+        }
+        @include m.desktop{
+            padding: 3rem 3rem 2rem 3rem;
+            min-height: 18rem;
+            max-width: 18rem;
+            min-width: 18rem;
         }        
     }
     &__icon{
-        width: v.$main_button_icon_size;
-        height: v.$main_button_icon_size;
+        width: 3.5rem;
+        height: 3.5rem;
+        @include m.desktop{
+            width: v.$main_button_icon_size;
+            height: v.$main_button_icon_size;
+        }
     }
     &__text{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         color: v.$main_button_text;
+        line-height: 1.2;
+        @include m.desktop{
+            font-size: 1.4rem;
+            line-height: 1.4;
+        }
     }
 }
 
 .home-main{
     &__title{
-        font-size: 3.6rem;
+        font-size: 2.6rem;
         font-weight: v.$main_title_weight;
         text-align: center;
         margin-bottom: 5rem;
         color: v.$main_title;
+        @include m.tablet{
+            font-size: 3.2rem;
+        }
+        @include m.desktop{
+            font-size: 3.6rem;
+        }
     }
     &__div{
         display: flex;
         flex-wrap: wrap;
         column-gap: calc(v.$gap * 3);
-        row-gap: v.$gap;
+        row-gap: calc(v.$gap / 2);
         margin: auto;
         justify-content: center;
         margin-bottom: v.$gap;
+        @include m.desktop{
+            row-gap: v.$gap;
+        }
     }
     &__card{
         background-color: v.$card_background;
         border-radius: v.$card_border_radius;
         box-shadow: v.$card_shadow;
-        padding: 3rem;
+        padding: 2rem 3rem;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -80,19 +104,32 @@
         align-items: center;
         transition: all 0.3s ease;
         height: 100%;
-        min-width: 36rem;
-        max-width: 36rem;
         &:hover{
             transform: scale(1.1);
         }
+
+        @include m.desktop{
+            padding: 3rem;
+            min-width: 36rem;
+            max-width: 36rem;
+        }
+
         &__icon{
-            width: v.$card_icon_size;
+            width: 5rem;
+            @include m.desktop{
+                width: v.$card_icon_size;
+            }
         }
         &__title{
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: v.$card_title_weight;
             color: v.$card_title;
             text-transform: uppercase;
+            margin: 0;
+            @include m.desktop{
+                font-size: 1.8rem;
+                margin: 1.6rem auto;
+            }
         }
         &__list{
             list-style-image: url('../img/icono-check.webp');
@@ -100,42 +137,73 @@
             flex-direction: column;
             gap: 1.2rem;
             li{
-                font-size: 1.8rem;
+                font-size: 1.4rem;
+                @include m.desktop{
+                    font-size: 1.8rem;
+                }
             }
         }
     }
 }
 
 .home-banner{
-    height: v.$banner_height;
+    height: auto;
     background-image: url('../img/banner.webp');
-    background-size: 100%;
-    background-position: center center;
+    background-size: cover;
+    background-position: 15%;
     background-repeat: no-repeat;
     margin: calc(v.$gap * 2) 0;
+    padding: 1rem;
+    @include m.tablet{
+        height: 27rem;
+    }
+    @include m.desktop{
+        height: v.$banner_height;
+        background-position: center center;
+    }
+    @include m.bigScreen{
+        height: v.$banner_height;
+    }
     &__flex{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
+        width: 90%;
+        @include m.bigScreen{
+            gap: 1.4rem;
+            width: 80%;
+        }
     }
     &__title{
         font-weight: v.$banner_title_weight;
         text-align: center;
         color: v.$banner_title;
-        font-size: v.$banner_title_size;
+        font-size: 2rem;
         text-transform: uppercase;
+        @include m.desktop{
+            font-size: 2.4rem;
+        }
+        @include m.bigScreen{
+            font-size: v.$banner_title_size;
+        }
     }
     &__text{
         font-weight: v.$banner_text_weight;
         text-align: center;
         color: v.$banner_text;
-        font-size: v.$banner_text_size;
+        font-size: 1.4rem;
         padding: v.$banner_title_padding;
         margin: 0;
         span{
             font-style: italic;
+        }
+        @include m.desktop{
+            font-size: 1.8rem;
+        }
+        @include m.bigScreen{
+            font-size: v.$banner_text_size;
         }
     }
 }
@@ -143,21 +211,39 @@
 .home-services{
     &__title{
         color: v.$font_color--4;
-        font-size: 3.6rem;
+        font-size: 2.6rem;
         text-align: center;
         font-weight: v.$bold;
+        @include m.tablet{
+            font-size: 3.2rem;
+        }
+        @include m.desktop{
+            font-size: 3.6rem;
+        }
     }
     &__subtitle{
         color: v.$font_color--2;
-        font-size: 3.2rem;
+        font-size: 2.2rem;
         text-align: center;
+        @include m.tablet{
+            font-size: 2.8rem;
+        }
+        @include m.desktop{
+            font-size: 3.2rem;
+        }
     }
     &__grid{
         width: 90%;
         display: grid;
-        margin: calc(v.$gap * 2) auto;
-        gap: v.$gap;
-        grid-template-columns: repeat(3, auto);
+        margin: calc(v.$gap) auto;
+        gap: calc(v.$gap / 2);
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        @include m.desktop{
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            margin: calc(v.$gap * 2) auto;
+            width: 80%;
+            gap: v.$gap;
+        }
     }
     &__card{
         border-radius: v.$border-radius;
@@ -181,9 +267,12 @@
         text-align: center;
     }
     &__image{
-        min-width: 30rem;
-        height: 28rem;
+        height: 16rem;
         object-fit: cover;
+        @include m.desktop{
+            min-width: 30rem;
+            height: 28rem;
+        }
     }
     &--other{
         background-color: #ECFFF6;
@@ -206,8 +295,12 @@
             @extend .home-services__card;
             flex: 1;
             flex-basis: 0;
-            min-width: 25%;
+            min-width: 22rem;
             max-width: 30rem;
+            @include m.desktop{
+                min-width: 30rem;
+                max-width: 40rem;
+            }
         }
     }
 }
@@ -218,28 +311,48 @@
     background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    margin: calc(v.$gap * 2) 0;
-    display: grid;
-    grid-template-columns: 55% 45%;
-    padding: v.$gap;
+    margin: v.$gap 0;
+    padding: calc(v.$gap / 2);
     place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: calc(v.$gap / 2);
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: 55% 45%;
+        place-items: center;
+        padding: v.$gap;
+        margin: calc(v.$gap * 2) 0;
+        gap: v.$gap;
+    }
     &__title{
-        width: 100%;
         height: 100%;
-        border-right: 0.2rem solid v.$border-color;
+        width: 100%;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         color: v.$banner_title;
-        font-size: v.$banner_title_size--1;
+        font-size: v.$banner_title_size;
         font-weight: v.$banner_title_weight;
+        border-bottom: 0.2rem solid v.$border-color;
+        @include m.tablet{
+            font-size: v.$banner_title_size--1;
+            height: 100%;
+            border-right: 0.2rem solid v.$border-color;
+            border-bottom: none;
+        }
     }
     img{
-        width: 80%;
+        width: 22rem;
         margin: auto;
         display: block;
+        @include m.tablet{
+            width: 80%;
+        }
     }
 }
 

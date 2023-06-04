@@ -8,25 +8,37 @@
     padding: 5rem 0;
     &__grid{
         display: grid;
-        @include m.grid(2, 0);
+        @include m.grid(1, 0);
         justify-content: center;
         align-items: center;
         height: 100%;
+        @include m.desktop{
+            @include m.grid(2, 0);
+        }
     }
     &__form{
         background-color: v.$form_background;
         border-radius: v.$border_radius;
         padding: 1.5rem;
-        width: 40rem;
+        width: 100%;
         margin: auto;
+        @include m.tablet{
+            width: 75%;
+        }
+        @include m.desktop{
+            width: 40rem;
+        }
         &--shadow{
             box-shadow: v.$form_shadow;
         }
         &__img{
             width: auto;
-            height: 10rem;
+            height: 6rem;
             display: block;
             margin: auto;
+            @include m.desktop{
+                height: 10rem;
+            }
         }
         &__legend{
             color: v.$form_title;
@@ -65,11 +77,15 @@
             background-color: v.$input_submit;
             color: v.$input_submit_text;
             border: none;
-            font-size: 2.2rem;
+            font-size: 1.6rem;
             padding: 1rem;
             border-radius: v.$border_radius;
             display: block;
             cursor: pointer;
+            transition: all 0.3s ease;
+            @include m.desktop{
+                font-size: 2.2rem;
+            }
             &:hover{
                 background-color: v.$input_submit_hover;
             }
@@ -84,11 +100,20 @@
     &__text{
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        grid-row: 1 / 2;
+        text-align: center;
+        @include m.desktop{
+            grid-column: 2 / 3 ;
+            text-align: left;
+            gap: 2rem;
+        }
         &__title{
-            font-size: v.$fixed_section_title_size;
+            font-size: 3.2rem;
             font-weight: v.$fixed_section_title_weight;
             color: v.$fixed_section_title;
+            @include m.desktop{
+                font-size: v.$fixed_section_title_size;
+            }
         }
         &__p{
             color: v.$fixed_section_text;

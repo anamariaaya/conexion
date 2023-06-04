@@ -17,7 +17,7 @@
     <?php endif;?>
 
     <?php
-        $folder = '/build/img/';
+        $folder = __DIR__.'/../../public/build/img/';
         $filename = getPathComponent().'.webp';
         $fileExists = file_exists($folder . $filename);
 
@@ -28,8 +28,9 @@
         <?php endif;?>
     <?php endif;?>
 
-    <nav class="header__nav wrapper">
-        <ul>
+    <nav class="header__nav wrapper">        
+        <i id="btn-menu" class="fas fa-bars header__nav--menu"></i>
+        <ul id="menu" class="header__nav--mobile">        
             <li>
                 <a href="/">Inicio</a>
             </li>

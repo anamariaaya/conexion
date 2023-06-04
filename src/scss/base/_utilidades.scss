@@ -3,7 +3,10 @@
 @use 'mixins' as m;
 
 .wrapper {
-    width: v.$main_width;
+    width: 90%;
     margin: 0 auto;
     height: 100%;
+    @include m.tablet{
+        width: v.$main_width;
+    }
 }

@@ -57,10 +57,11 @@
     background-color: $bgColor;
     color: $txtColor;
     border-radius: $radius;
-    padding: 1rem 5rem;
+    padding: 1rem 3.5rem;
     text-align: center;
     font-weight: $weight;
     transition: all 0.3s ease;
+    font-size: 1.4rem;
     &:hover{
         background-color: v.$btn_background--3_hover;
     }
@@ -69,7 +70,14 @@
     }
     &:disabled{
         background-color: v.$btn_background--3_disabled;
-        }
+    }
+    @include desktop(){
+        font-size: 1.6rem;
+    }
+    @include bigScreen(){
+        padding: 1rem 5rem;
+        font-size: 1.8rem;
+    }
 }
 
 @mixin card($shadow){
