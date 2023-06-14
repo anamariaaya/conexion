@@ -10,7 +10,7 @@
 ">
     <?php
         if(isset($inicio)):?>
-        <button class="header__overlay__btn btn-video">Ver video</button>
+        <button id="video-header-btn" data-video="video-header" class="header__overlay__btn btn-video">Ver video</button>
             <div class="header__overlay">
                 <video class="header__overlay__video" src="/build/videos/header.mp4" autoplay loop muted></video>
             </div>

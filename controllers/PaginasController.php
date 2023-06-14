@@ -30,51 +30,85 @@ class PaginasController{
         ]);
     }
 
+    public static function quienesSomos(Router $router){
+        $sectores = true;
+        $main_title = '¿Quiénes Somos?';
+        $router->render('paginas/quienes-somos',[
+            'titulo' => '¿Quiénes Somos?',
+            'main_title' => $main_title,
+            'sectores' => $sectores
+        ]);
+    }
+
+    //Funciones para las páginas de servicios
+    public static function aseoLimpieza(Router $router){
+        $paginas = true;
+        $main_title = 'Outsourcing de Aseo y Limpieza';
+        $router->render('paginas/aseo-limpieza',[
+            'titulo' => 'Aseo y Limpieza',
+            'main_title' => $main_title,
+            'paginas' => $paginas
+        ]);
+    }
+
+    //Funciones para las secciones de sectores
     public static function sectorSalud(Router $router){
+        $sectores = true;
         $main_title = 'Sector Salud';
         $router->render('paginas/sector-salud',[
             'titulo' => 'Sector Salud',
-            'main_title' => $main_title
+            'main_title' => $main_title,
+            'sectores' => $sectores
         ]);
     }
 
     public static function sectorEducativo(Router $router){
+        $sectores = true;
         $main_title = 'Sector Educativo';
         $router->render('paginas/sector-educativo',[
             'titulo' => 'Sector Educativo',
-            'main_title' => $main_title
+            'main_title' => $main_title,
+            'sectores' => $sectores
         ]);
     }
 
     public static function sectorComercial(Router $router){
+        $sectores = true;
         $main_title = 'Sector Comercial';
         $router->render('paginas/sector-comercial',[
             'titulo' => 'Sector Comercial',
-            'main_title' => $main_title
+            'main_title' => $main_title,
+            'sectores' => $sectores
         ]);
     }
 
     public static function sectorResidencial(Router $router){
+        $sectores = true;
         $main_title = 'Sector Residencial';
         $router->render('paginas/sector-residencial',[
             'titulo' => 'Sector Residencial',
-            'main_title' => $main_title
+            'main_title' => $main_title,
+            'sectores' => $sectores
         ]);
     }
 
     public static function sectorServicios(Router $router){
+        $sectores = true;
         $main_title = 'Sector Servicios';
         $router->render('paginas/sector-servicios',[
             'titulo' => 'Sector Servicios',
-            'main_title' => $main_title
+            'main_title' => $main_title,
+            'sectores' => $sectores
         ]);
     }
 
     public static function sectorHotelero(Router $router){
+        $sectores = true;
         $main_title = 'Sector Hotelero';
         $router->render('paginas/sector-hotelero',[
             'titulo' => 'Sector Hotelero',
-            'main_title' => $main_title
+            'main_title' => $main_title,
+            'sectores' => $sectores
         ]);
     }
 }

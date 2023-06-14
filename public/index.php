@@ -9,6 +9,12 @@ $router = new Router();
 
 //Páginas públicas
 $router->get('/',[PaginasController::class, 'index']);
+$router->get('/quienes-somos',[PaginasController::class, 'quienesSomos']);
+
+//Páginas de servicios
+$router->get('/aseo-limpieza',[PaginasController::class, 'aseoLimpieza']);
+
+//sectores
 $router->get('/sector-salud',[PaginasController::class, 'sectorSalud']);
 $router->get('/sector-educativo',[PaginasController::class, 'sectorEducativo']);
 $router->get('/sector-comercial',[PaginasController::class, 'sectorComercial']);

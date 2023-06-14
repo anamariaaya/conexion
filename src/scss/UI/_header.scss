@@ -30,8 +30,14 @@
             text-transform: uppercase;
             color: v.$header_title;
             font-weight: v.$header_title_weight;
-            font-size: 5rem;
+            font-size: 3.6rem;
             z-index: -1;
+            @include m.tablet{
+                font-size: 4.5rem;
+            }
+            @include m.desktop{
+                font-size: 5rem;
+            }
         }
         &__btn{
             position: absolute;
@@ -56,14 +62,20 @@
 
     &__pages{
         background-color: v.$header_background--1;
-        padding-bottom: 8.1rem;
+        padding-bottom: 10rem;
     }
 
     &__sections{
         position: relative;
-        min-height: 42rem;
+        min-height: 26rem;
         background-blend-mode: overlay;
         background-image: v.$header_overlay;
+        @include m.tablet{
+            min-height: 36rem;
+        }
+        @include m.desktop{
+            min-height: 42rem;
+        }
     }
 
     &__nav{

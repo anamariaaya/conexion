@@ -28,9 +28,6 @@
         @include m.desktop{
             width: 40rem;
         }
-        &--shadow{
-            box-shadow: v.$form_shadow;
-        }
         &__img{
             width: auto;
             height: 6rem;
@@ -41,7 +38,7 @@
             }
         }
         &__legend{
-            color: v.$form_title;
+            display: none;
         }
         &__fieldset{
             border: none;
@@ -118,5 +115,30 @@
         &__p{
             color: v.$fixed_section_text;
         }
+    }
+}
+
+.contacto__top{
+    .contacto__form{
+        width: auto;
+        max-width: 38rem;
+        margin-bottom: v.$gap;
+        @include m.tablet{
+            transform: translate(0, -15rem);
+            margin-bottom: 0;
+        }
+        @include m.desktop{
+            transform: translate(0, -25rem);
+        }
+    }
+    .contacto__form--shadow{
+        box-shadow: v.$form_shadow
+    }
+
+    .contacto__form__legend{
+        display: block;
+        color: v.$form_title;
+        font-size: 2.2rem;
+        font-weight: v.$form_title_weight;
     }
 }

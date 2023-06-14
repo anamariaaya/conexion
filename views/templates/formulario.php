@@ -1,9 +1,8 @@
-<form class="contacto__form <?php echo !$inicio ? 'contacto__form--shadow' : '' ?>">
+<form class="contacto__form contacto__form--shadow">
     <img class="contacto__form__img" src="/build/img/logo-contacto.svg" alt="Contacto" loading="lazy">
-    <?php
-    if(!isset($inicio)):?>
-        <legend class="contacto__form__legend">Contáctanos</legend>
-    <?php endif?>
+    
+    <legend class="contacto__form__legend">Contáctanos</legend>
+
     <fieldset class="contacto__form__fieldset">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" placeholder="Tu nombre" required>
@@ -26,7 +25,7 @@
         <label for="mensaje">Mensaje</label>
         <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
 
-        <input class="contacto__form__btn" type="submit" value="Enviar" class="contacto__form__submit">
+        <input id="submit-contact" class="contacto__form__btn" type="submit" value="Enviar" class="contacto__form__submit">
     </fieldset>
 
 </form>
