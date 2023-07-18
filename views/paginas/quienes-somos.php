@@ -1,40 +1,48 @@
-<h1><?php echo $titulo; ?></h1>
-
 <p>Conexión Outsourcing es una empresa de servicios de outsourcing de personal, con más de 20 años de experiencia en el mercado, que ofrece soluciones integrales en materia de recursos humanos, con el objetivo de brindar a nuestros clientes un servicio de calidad, eficiente y oportuno.</p>
 
 <!--image carousel slider-->
-<div class="carousel-wrapper">
-    <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <img class="swiper__img" src="https://images.pexels.com/photos/5137664/pexels-photo-5137664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        </div>
-        <div class="swiper-slide">
-            <img class="swiper__img" src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        </div>
-        <div class="swiper-slide">
-            <img class="swiper__img" src="https://images.pexels.com/photos/1757363/pexels-photo-1757363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        </div>
-        <div class="swiper-slide">
-            <img class="swiper__img" src="https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        </div>
-        <div class="swiper-slide">
-            <img class="swiper__img" src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        </div>       
-            
-        <div class="swiper-slide">
-            <img class="swiper__img" src="https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        </div>
-        
-        <div class="swiper-slide">
-            <img class="swiper__img" src="https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-        </div>
+<div class="gallery">
+    <div class="gallery__slides">
+        <img class="gallery__slides__img" src="/build/img/gallery1.webp" alt="Imágenes de la empresa" loading="lazy">
     </div>
+    <div class="gallery__slides">
+        <img class="gallery__slides__img" src="/build/img/gallery2.webp" alt="Imágenes de la empresa" loading="lazy">
+    </div>
+    <div class="gallery__slides">
+        <img class="gallery__slides__img" src="/build/img/gallery3.webp" alt="Imágenes de la empresa" loading="lazy">
+    </div>
+    <div class="gallery__slides">
+        <img class="gallery__slides__img" src="/build/img/gallery4.webp" alt="Imágenes de la empresa" loading="lazy">
+    </div>
+    <div class="gallery__slides">
+        <img class="gallery__slides__img" src="/build/img/gallery5.webp" alt="Imágenes de la empresa" loading="lazy">
+    </div>
+    <div class="gallery__slides">
+        <img class="gallery__slides__img" src="/build/img/gallery6.webp" alt="Imágenes de la empresa" loading="lazy">
+    </div>
+    <div class="gallery__slides">
+        <img class="gallery__slides__img" src="/build/img/gallery7.webp" alt="Imágenes de la empresa" loading="lazy">
+    </div>
+    <div class="gallery__slides">
+        <img class="gallery__slides__img" src="/build/img/gallery8.webp" alt="Imágenes de la empresa" loading="lazy">
+    </div>
+    <div class="gallery__slides">
+        <img class="gallery__slides__img" src="/build/img/gallery9.webp" alt="Imágenes de la empresa" loading="lazy">
+    </div>
+    <div class="gallery__slides">
+        <img class="gallery__slides__img" src="/build/img/gallery10.webp" alt="Imágenes de la empresa" loading="lazy">
+    </div>
+</div>
 
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev swiper-btn"></div>
-    <div class="swiper-button-next swiper-btn"></div>
-    </div>
+<div class="gallery__controls">
+  <span class="gallery__dot"></span> 
+  <span class="gallery__dot"></span> 
+  <span class="gallery__dot"></span>
+  <span class="gallery__dot"></span> 
+  <span class="gallery__dot"></span> 
+  <span class="gallery__dot"></span>
+  <span class="gallery__dot"></span> 
+  <span class="gallery__dot"></span> 
+  <span class="gallery__dot"></span>
+  <span class="gallery__dot"></span>
 </div>

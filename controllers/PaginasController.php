@@ -40,6 +40,16 @@ class PaginasController{
         ]);
     }
 
+    public static function servicios(Router $router){
+        $paginas = true;
+        $main_title = 'Servicios';
+        $router->render('paginas/servicios',[
+            'titulo' => 'Servicios',
+            'main_title' => $main_title,
+            'paginas' => $paginas
+        ]);
+    }
+
     //Funciones para las páginas de servicios
     public static function aseoLimpieza(Router $router){
         $paginas = true;

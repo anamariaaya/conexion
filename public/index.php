@@ -13,6 +13,7 @@ $router->get('/quienes-somos',[PaginasController::class, 'quienesSomos']);
 
 //Páginas de servicios
 $router->get('/aseo-limpieza',[PaginasController::class, 'aseoLimpieza']);
+$router->get('/servicios',[PaginasController::class, 'servicios']);
 
 //sectores
 $router->get('/sector-salud',[PaginasController::class, 'sectorSalud']);

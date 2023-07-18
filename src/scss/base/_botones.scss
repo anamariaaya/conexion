@@ -3,5 +3,6 @@
 @use 'base/mixins' as m;
 
 .btn-video{
-    @include m.boton(v.$btn_background--3, v.$btn_background--3_text,block, v.$border_radius, v.$semibold);
+    @include m.boton(v.$btn_background--2, v.$btn_background--3_text,block, v.$border_radius, v.$semibold);
+    font-size: 2.5rem !important;
 }

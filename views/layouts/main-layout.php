@@ -30,7 +30,11 @@
             
             <?php else: 
                 echo $contenido;
-            endif; 
+            endif;
+
+            if(!isset($inicio)):
+                include_once __DIR__ .'/../templates/banner-trabajo.php';
+            endif;
 
 
             include_once __DIR__ .'/../templates/contacto.php';

@@ -1,7 +1,7 @@
 <form class="contacto__form contacto__form--shadow">
     <img class="contacto__form__img" src="/build/img/logo-contacto.svg" alt="Contacto" loading="lazy">
     
-    <legend class="contacto__form__legend">Contáctanos</legend>
+    <legend class="contacto__form__legend">Cotiza nuestros servicios</legend>
 
     <fieldset class="contacto__form__fieldset">
         <label for="nombre">Nombre</label>
