@@ -1,3 +1,14 @@
-<h1><?php echo $titulo; ?></h1>
+<p class="pGreen">Limpieza en centros comerciales</p>
 
-<p>Conexión Outsourcing es una empresa de servicios de outsourcing de personal, con más de 20 años de experiencia en el mercado, que ofrece soluciones integrales en materia de recursos humanos, con el objetivo de brindar a nuestros clientes un servicio de calidad, eficiente y oportuno.</p>
+<p>Realizamos una limpieza detallada en zonas comunes y nos enfocamos en los puntos claves como
+plazoletas de comidas, pasillos y baños.</p>
+
+<p>Diariamente se realizan labores de mantenimiento de
+piso, recolección de residuos sólidos, remoción de grasa de las superficies, polvo y demás
+partículas, dando alcance a lograr un ambiente óptimo para sus clientes.
+</p>
+
+<p>A través de nuestro trabajo <span class="pGreen--light">CONECTAMOS</span> con espacios limpios y cómodos para el bienestar total
+de todos sus clientes.</p>
+
+<img class="mTop-3" src="/build/img/image-comerciales.webp" alt="Limpieza en centros comerciales" loading="lazy">

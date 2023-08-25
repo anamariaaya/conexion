@@ -7,31 +7,31 @@
             </a>
         </li>
         <li>
-            <a href="" class="index-menu__btn">
+            <a href="/outsourcing-rrhh" class="index-menu__btn">
                 <img src="/build/img/icono-rrhh.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
                 <p class="index-menu__text">Outsourcing recursos humanos</p>
             </a>
         </li>
         <li>
-            <a href="" class="index-menu__btn">
+            <a href="/outsourcing-nomina" class="index-menu__btn">
                 <img src="/build/img/icono-nomina.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
                 <p class="index-menu__text">Outsourcing nómina</p>
             </a>
         </li>
         <li>
-            <a href="" class="index-menu__btn">
+            <a href="/sector-hotelero" class="index-menu__btn">
                 <img src="/build/img/icono-hotelero.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
                 <p class="index-menu__text">Outsourcing hotelero</p>
             </a>
         </li>
         <li>
-            <a href="" class="index-menu__btn">
+            <a href="/outsourcing-callcenter" class="index-menu__btn">
                 <img src="/build/img/icono-callcenter.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
                 <p class="index-menu__text">Outsourcing Call Center Bilingüe</p>
             </a>
         </li>
         <li>
-            <a href="" class="index-menu__btn">
+            <a href="outsourcing-servicios-especializados" class="index-menu__btn">
                 <img src="/build/img/icono-mantenimiento.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
                 <p class="index-menu__text">Servicios especializados de limpieza</p>
             </a>

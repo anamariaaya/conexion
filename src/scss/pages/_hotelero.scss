@@ -1,0 +1,19 @@
+@use 'sass:math';
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.hotelero{
+    margin-top: 5rem;
+    li{
+        list-style-image: url('../img/check.webp');
+    }
+}
+
+.grid-hotelero{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    img{
+        max-width: 40%;
+    }
+}

@@ -32,6 +32,7 @@
             font-weight: v.$header_title_weight;
             font-size: 3.6rem;
             z-index: -1;
+            max-width: 60%;
             @include m.tablet{
                 font-size: 4.5rem;
             }

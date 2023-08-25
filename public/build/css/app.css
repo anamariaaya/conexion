@@ -535,6 +535,28 @@ p {
   }
 }
 
+.pGreen {
+  margin-top: 3rem;
+  color: #1A4715;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.pGreen--light {
+  color: #02B665;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.pBlack--small {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.mTop-3 {
+  margin-top: 3rem;
+}
+
 .btn-video {
   border: none;
   cursor: pointer;
@@ -603,6 +625,7 @@ p {
   font-weight: 700;
   font-size: 3.6rem;
   z-index: -1;
+  max-width: 60%;
 }
 @media (min-width: 850px) {
   .header__overlay__title {
@@ -1742,5 +1765,55 @@ p {
 .gallery__dot__active, .gallery__dot:hover {
   background-color: #02B665;
   cursor: pointer;
+}
+
+.nomina {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-left: 4rem;
+}
+.nomina li:nth-child(1) {
+  list-style-image: url(../img/icon-li-1.webp);
+}
+.nomina li:nth-child(2) {
+  list-style-image: url(../img/icon-li-2.webp);
+}
+.nomina li:nth-child(3) {
+  list-style-image: url(../img/icon-li-3.webp);
+}
+.nomina li:nth-child(4) {
+  list-style-image: url(../img/icon-li-4.webp);
+}
+.nomina li:nth-child(5) {
+  list-style-image: url(../img/icon-li-5.webp);
+}
+.nomina li:nth-child(6) {
+  list-style-image: url(../img/icon-li-6.webp);
+}
+
+.grid-especializados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.grid-especializados img {
+  max-width: 40%;
+}
+
+.hotelero {
+  margin-top: 5rem;
+}
+.hotelero li {
+  list-style-image: url("../img/check.webp");
+}
+
+.grid-hotelero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.grid-hotelero img {
+  max-width: 40%;
 }
 /*# sourceMappingURL=app.css.map */

@@ -121,4 +121,74 @@ class PaginasController{
             'sectores' => $sectores
         ]);
     }
+
+    public static function outsourcingNomina(Router $router){
+        $sectores = true;
+        $main_title = 'Outsourcing Nómina';
+        $router->render('paginas/outsourcing-nomina',[
+            'titulo' => 'Otra prueba',
+            'main_title' => $main_title,
+            'sectores' => $sectores
+        ]);
+    }
+
+    public static function outsourcingRRHH(Router $router){
+        $sectores = true;
+        $main_title = 'Outsourcing Recursos Humanos';
+        $router->render('paginas/outsourcing-rrhh',[
+            'titulo' => 'Otra prueba',
+            'main_title' => $main_title,
+            'sectores' => $sectores
+        ]);
+    }
+
+    public static function outsourcingCallcenter(Router $router){
+        $sectores = true;
+        $main_title = 'Outsourcing Call Center Bilingüe';
+        $router->render('paginas/outsourcing-callcenter',[
+            'titulo' => 'Otra prueba',
+            'main_title' => $main_title,
+            'sectores' => $sectores
+        ]);
+    }
+
+    public static function outsourcingServiciosEspecializados(Router $router){
+        $sectores = true;
+        $main_title = 'Outsourcing Servicios Especializados';
+        $router->render('paginas/outsourcing-servicios-especializados',[
+            'titulo' => 'Otra prueba',
+            'main_title' => $main_title,
+            'sectores' => $sectores
+        ]);
+    }
+
+    public static function piscineroSalvavidas(Router $router){
+        $sectores = true;
+        $main_title = 'Piscinero Salvavidas';
+        $router->render('paginas/piscinero-salvavidas',[
+            'titulo' => 'Otra prueba',
+            'main_title' => $main_title,
+            'sectores' => $sectores
+        ]);
+    }
+
+    public static function jardineria(Router $router){
+        $sectores = true;
+        $main_title = 'Jardinería';
+        $router->render('paginas/jardineria',[
+            'titulo' => 'Otra prueba',
+            'main_title' => $main_title,
+            'sectores' => $sectores
+        ]);
+    }
+
+    public static function meseros(Router $router){
+        $sectores = true;
+        $main_title = 'Meseros';
+        $router->render('paginas/meseros',[
+            'titulo' => 'Otra prueba',
+            'main_title' => $main_title,
+            'sectores' => $sectores
+        ]);
+    }
 }

@@ -1,0 +1,12 @@
+@use 'sass:math';
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.grid-especializados{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    img{
+        max-width: 40%;
+    }
+}
