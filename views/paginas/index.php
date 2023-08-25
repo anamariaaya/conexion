@@ -148,31 +148,31 @@
     <h2 class="home-services--other__title">Otros Servicios</h2>
     <div class="wrapper">
         <div class="home-services--other__flex">
-            <a href="" class="home-services--other__card">
+            <a href="/outsourcing-rrhh" class="home-services--other__card">
                 <div>
                     <img class="home-services__image" src="/build/img/main-serv-rrhh.webp" alt="imagen de recursos humanos" loading="lazy"/>
                     <p class="home-services__text">Outsourcing Recursos Humanos</p>
                 </div>
             </a>
-            <a href="" class="home-services--other__card">
+            <a href="/outsourcing-nomina" class="home-services--other__card">
                 <div>
                     <img class="home-services__image" src="/build/img/main-serv-nomina.webp" alt="imagen de nómina" loading="lazy"/>
                     <p class="home-services__text">Outsourcing Nómina</p>
                 </div>
             </a>
-            <a href="" class="home-services--other__card">
+            <a href="/sector-hotelero" class="home-services--other__card">
                 <div>
                     <img class="home-services__image" src="/build/img/main-serv-hotelero2.webp" alt="imagen de outsourcing hotelero" loading="lazy"/>
                     <p class="home-services__text">Outsourcing Hotelero</p>
                 </div>
             </a>
-            <a href="" class="home-services--other__card">
+            <a href="outsourcing-callcenter" class="home-services--other__card">
                 <div>
                     <img class="home-services__image" src="/build/img/main-serv-callcenter.webp" alt="imagen de Call center" loading="lazy"/>
                     <p class="home-services__text">Outsourcing Call center bilingüe</p>
                 </div>
             </a>
-            <a href="" class="home-services--other__card">
+            <a href="/outsourcing-servicios-especializados" class="home-services--other__card">
                 <div>
                     <img class="home-services__image" src="/build/img/main-serv-mantenimiento.webp" alt="imagen de Mantenimiento" loading="lazy"/>
                     <p class="home-services__text">Outsourcing Mantenimiento</p>

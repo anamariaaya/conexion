@@ -10,10 +10,11 @@
 }
 
 .grid-hotelero{
+    margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     img{
-        max-width: 40%;
+        width: 28rem;
     }
 }

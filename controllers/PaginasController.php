@@ -14,22 +14,6 @@ class PaginasController{
         ]);
     }
 
-    public static function prueba(Router $router){
-        $paginas = true;
-        $router->render('paginas/prueba',[
-            'paginas' => $paginas,
-            'titulo' => 'Prueba'
-        ]);
-    }
-
-    public static function otraprueba(Router $router){
-        $main_title = 'Otra prueba';
-        $router->render('paginas/otraprueba',[
-            'titulo' => 'Otra prueba',
-            'main_title' => $main_title
-        ]);
-    }
-
     public static function quienesSomos(Router $router){
         $sectores = true;
         $main_title = '¿Quiénes Somos?';
@@ -136,7 +120,7 @@ class PaginasController{
         $sectores = true;
         $main_title = 'Outsourcing Recursos Humanos';
         $router->render('paginas/outsourcing-rrhh',[
-            'titulo' => 'Otra prueba',
+            'titulo' => 'Outsourcing Recursos Humanos',
             'main_title' => $main_title,
             'sectores' => $sectores
         ]);
@@ -146,7 +130,7 @@ class PaginasController{
         $sectores = true;
         $main_title = 'Outsourcing Call Center Bilingüe';
         $router->render('paginas/outsourcing-callcenter',[
-            'titulo' => 'Otra prueba',
+            'titulo' => 'Outsourcing Call Center Bilingüe',
             'main_title' => $main_title,
             'sectores' => $sectores
         ]);
@@ -156,7 +140,7 @@ class PaginasController{
         $sectores = true;
         $main_title = 'Outsourcing Servicios Especializados';
         $router->render('paginas/outsourcing-servicios-especializados',[
-            'titulo' => 'Otra prueba',
+            'titulo' => 'Outsourcing Servicios Especializados',
             'main_title' => $main_title,
             'sectores' => $sectores
         ]);
@@ -166,7 +150,7 @@ class PaginasController{
         $sectores = true;
         $main_title = 'Piscinero Salvavidas';
         $router->render('paginas/piscinero-salvavidas',[
-            'titulo' => 'Otra prueba',
+            'titulo' => 'Piscinero Salvavidas',
             'main_title' => $main_title,
             'sectores' => $sectores
         ]);
@@ -176,7 +160,7 @@ class PaginasController{
         $sectores = true;
         $main_title = 'Jardinería';
         $router->render('paginas/jardineria',[
-            'titulo' => 'Otra prueba',
+            'titulo' => 'Jardinería',
             'main_title' => $main_title,
             'sectores' => $sectores
         ]);
@@ -186,7 +170,17 @@ class PaginasController{
         $sectores = true;
         $main_title = 'Meseros';
         $router->render('paginas/meseros',[
-            'titulo' => 'Otra prueba',
+            'titulo' => 'Meseros',
+            'main_title' => $main_title,
+            'sectores' => $sectores
+        ]);
+    }
+
+    public static function limpiezaHabitaciones(Router $router){
+        $sectores = true;
+        $main_title = 'Limpieza de Habitaciones';
+        $router->render('paginas/limpieza-habitaciones',[
+            'titulo' => 'Limpieza de Habitaciones',
             'main_title' => $main_title,
             'sectores' => $sectores
         ]);

@@ -128,6 +128,7 @@ h4{
 
 p{
     font-size: 1.4rem;
+    font-weight: 400;
     @include m.tablet{
         font-size: 1.6rem;
     }
@@ -140,4 +141,8 @@ p{
     @include m.ultraWide{
         font-size: 2.2rem;
     }
+}
+
+.sectores-content{
+    margin-top: 4rem;
 }

@@ -29,7 +29,11 @@ $router->get('/outsourcing-rrhh',[PaginasController::class, 'outsourcingRRHH']);
 $router->get('/outsourcing-callcenter',[PaginasController::class, 'outsourcingCallcenter']);
 $router->get('/outsourcing-servicios-especializados',[PaginasController::class, 'outsourcingServiciosEspecializados']);
 
-$router->get('/prueba',[PaginasController::class, 'prueba']);
-$router->get('/otraprueba',[PaginasController::class, 'otraprueba']);
+//hotelería
+$router->get('/piscinero-salvavidas',[PaginasController::class, 'piscineroSalvavidas']);
+$router->get('/jardineria',[PaginasController::class, 'jardineria']);
+$router->get('/meseros',[PaginasController::class, 'meseros']);
+
+$router->get('/limpieza-habitaciones',[PaginasController::class, 'limpiezaHabitaciones']);
 
 $router->comprobarRutas();
