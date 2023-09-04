@@ -1,0 +1,34 @@
+@use 'sass:math';
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nomina{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-left: 4rem;
+    li:nth-child(1){
+        list-style-image: url(../img/icon-li-1.webp);
+        //list-style-position: inside;
+    }
+    li:nth-child(2){
+        list-style-image: url(../img/icon-li-2.webp);
+
+    }
+    li:nth-child(3){
+        list-style-image: url(../img/icon-li-3.webp);
+
+    }
+    li:nth-child(4){
+        list-style-image: url(../img/icon-li-4.webp);
+
+    }
+    li:nth-child(5){
+        list-style-image: url(../img/icon-li-5.webp);
+
+    }
+    li:nth-child(6){
+        list-style-image: url(../img/icon-li-6.webp);
+
+    }
+}

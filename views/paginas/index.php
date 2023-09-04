@@ -1,37 +1,37 @@
 <div class="wrapper">
     <ul class="index-menu" aria-label="menu">
         <li>
-            <a href="" class="index-menu__btn">
+            <a href="/aseo-limpieza" class="index-menu__btn">
                 <img src="/build/img/icono-aseo.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
                 <p class="index-menu__text">Limpieza y aseo</p>
             </a>
         </li>
         <li>
-            <a href="" class="index-menu__btn">
+            <a href="/outsourcing-rrhh" class="index-menu__btn">
                 <img src="/build/img/icono-rrhh.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
                 <p class="index-menu__text">Outsourcing recursos humanos</p>
             </a>
         </li>
         <li>
-            <a href="" class="index-menu__btn">
+            <a href="/outsourcing-nomina" class="index-menu__btn">
                 <img src="/build/img/icono-nomina.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
                 <p class="index-menu__text">Outsourcing nómina</p>
             </a>
         </li>
         <li>
-            <a href="" class="index-menu__btn">
+            <a href="/sector-hotelero" class="index-menu__btn">
                 <img src="/build/img/icono-hotelero.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
                 <p class="index-menu__text">Outsourcing hotelero</p>
             </a>
         </li>
         <li>
-            <a href="" class="index-menu__btn">
+            <a href="/outsourcing-callcenter" class="index-menu__btn">
                 <img src="/build/img/icono-callcenter.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
                 <p class="index-menu__text">Outsourcing Call Center Bilingüe</p>
             </a>
         </li>
         <li>
-            <a href="" class="index-menu__btn">
+            <a href="outsourcing-servicios-especializados" class="index-menu__btn">
                 <img src="/build/img/icono-mantenimiento.webp" class="index-menu__icon" alt="ícono de " loading="lazy"/>
                 <p class="index-menu__text">Servicios especializados de limpieza</p>
             </a>
@@ -104,37 +104,37 @@
     <h3 class="home-services__subtitle">Aseo y Desinfección</h3>
     <div class="wrapper">
         <div class="home-services__grid">
-            <a href="">
+            <a href="/sector-comercial">
                 <div class="home-services__card">
                     <img class="home-services__image" src="/build/img/main-serv-comercial.webp" alt="imagen de sector comercial" loading="lazy"/>
                     <p class="home-services__text">Sector Comercial</p>
                 </div>
             </a>
-            <a href="">
+            <a href="/sector-educativo">
                 <div class="home-services__card">
                     <img class="home-services__image" src="/build/img/main-serv-educativo.webp" alt="imagen de sector educativo" loading="lazy"/>
                     <p class="home-services__text">Sector Educativo</p>
                 </div>
             </a>
-            <a href="">
+            <a href="sector-residencial">
                 <div class="home-services__card">
                     <img class="home-services__image" src="/build/img/main-serv-conjuntos.webp" alt="imagen de conjuntos residenciales" loading="lazy"/>
                     <p class="home-services__text">Conjuntos residenciales</p>
                 </div>
             </a>
-            <a href="">
+            <a href="sector-salud">
                 <div class="home-services__card">
                     <img class="home-services__image" src="/build/img/main-serv-salud.webp" alt="imagen de sector salud" loading="lazy"/>
                     <p class="home-services__text">Sector Salud</p>
                 </div>
             </a>
-            <a href="">
+            <a href="/sector-servicios">
                 <div class="home-services__card">
                     <img class="home-services__image" src="/build/img/main-serv-servicios.webp" alt="imagen de sector servicios" loading="lazy"/>
                     <p class="home-services__text">Sector Servicios</p>
                 </div>
             </a>
-            <a href="">
+            <a href="/sector-hotelero">
                 <div class="home-services__card">
                     <img class="home-services__image" src="/build/img/main-serv-hotelero.webp" alt="imagen de sector hotelero" loading="lazy"/>
                     <p class="home-services__text">Sector hotelero</p>
@@ -148,31 +148,31 @@
     <h2 class="home-services--other__title">Otros Servicios</h2>
     <div class="wrapper">
         <div class="home-services--other__flex">
-            <a href="" class="home-services--other__card">
+            <a href="/outsourcing-rrhh" class="home-services--other__card">
                 <div>
                     <img class="home-services__image" src="/build/img/main-serv-rrhh.webp" alt="imagen de recursos humanos" loading="lazy"/>
                     <p class="home-services__text">Outsourcing Recursos Humanos</p>
                 </div>
             </a>
-            <a href="" class="home-services--other__card">
+            <a href="/outsourcing-nomina" class="home-services--other__card">
                 <div>
                     <img class="home-services__image" src="/build/img/main-serv-nomina.webp" alt="imagen de nómina" loading="lazy"/>
                     <p class="home-services__text">Outsourcing Nómina</p>
                 </div>
             </a>
-            <a href="" class="home-services--other__card">
+            <a href="/sector-hotelero" class="home-services--other__card">
                 <div>
                     <img class="home-services__image" src="/build/img/main-serv-hotelero2.webp" alt="imagen de outsourcing hotelero" loading="lazy"/>
                     <p class="home-services__text">Outsourcing Hotelero</p>
                 </div>
             </a>
-            <a href="" class="home-services--other__card">
+            <a href="outsourcing-callcenter" class="home-services--other__card">
                 <div>
                     <img class="home-services__image" src="/build/img/main-serv-callcenter.webp" alt="imagen de Call center" loading="lazy"/>
                     <p class="home-services__text">Outsourcing Call center bilingüe</p>
                 </div>
             </a>
-            <a href="" class="home-services--other__card">
+            <a href="/outsourcing-servicios-especializados" class="home-services--other__card">
                 <div>
                     <img class="home-services__image" src="/build/img/main-serv-mantenimiento.webp" alt="imagen de Mantenimiento" loading="lazy"/>
                     <p class="home-services__text">Outsourcing Mantenimiento</p>
@@ -215,4 +215,10 @@
         <img src="/build/img/logo-22.webp" alt="logo de cliente" loading="lazy">
         <img src="/build/img/logo-23.webp" alt="logo de cliente" loading="lazy">
     </div>
+
+    <p class="tCenter">Conexión Outsourcing SAS manifiesta que empleará los signos distintivos y marcas de terceros de manera referencial y efímera, por lo tanto no explotará comercialmente dichas marcas y su uso se reglamentará bajo las pautas del MANUAL PARA USO PARCIAL Y EFÍMERO DE SIGNOS DISTINTIVOS EN MEDIOS VIRTUALES.</p>
 </div>
+
+<?php
+    $script= '<script src="/build/js/videos.js"></script>';
+?>

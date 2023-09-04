@@ -1,0 +1,19 @@
+@use 'sass:math';
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.aseo{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: v.$gap auto;
+    @include m.tablet{
+        margin: calc(v.$gap * 2);
+    }
+    @include m.ultraWide{
+        margin: calc(v.$gap * 2.5);
+    }
+    &__title, &__subtitle{
+        text-align: center;
+    }
+}

@@ -32,7 +32,7 @@ $fuente: 'Poppins', sans-serif;
 // Tamaño de Media Queries
 $mini: 280px;
 $telefono: 480px;
-$tablet: 768px;
+$tablet: 850px;
 $desktop: 1024px;
 $bigScreen: 1250px;
 $ultraWide: 1440px;
@@ -166,7 +166,7 @@ $header_button_disabled: $brand_color--1_disabled;
 $header_button_text: $brand_color--1_text;
 
 $header_button--1: $brand_color--2;
-$header_button--1_hover: $brand_color--1_hover;
+$header_button--1_hover: darken($brand_color--1_hover, 5);
 $header_button--1_active: $brand_color--1_active;
 $header_button--1_disabled: $brand_color--2_disabled;
 $header_button--1_text: $brand_color--2_text;

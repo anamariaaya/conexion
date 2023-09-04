@@ -27,7 +27,16 @@ body {
 
 p {
     color: v.$font_color;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    @include m.tablet{
+        font-size: 1.6rem;
+    }
+    @include m.desktop{
+        font-size: 1.8rem;
+    }
+    @include m.bigScreen{
+        font-size: 2rem;
+    }
 }
 
 a {
@@ -51,4 +60,89 @@ h1, h2{
 
 h3, h4{
     font-weight: v.$regular;
+}
+
+h1{
+    font-size: 3rem;
+    @include m.tablet{
+        font-size: 3.4rem;
+    }
+    @include m.desktop{
+        font-size: 4.2rem;
+    }
+    @include m.bigScreen{
+        font-size: 4.6rem;
+    }
+    @include m.ultraWide{
+        font-size: 5.2rem;
+    }
+}
+
+h2{
+    font-size: 2.6rem;
+    @include m.tablet{
+        font-size: 2.8rem;
+    }
+    @include m.desktop{
+        font-size: 3.2rem;
+    }
+    @include m.bigScreen{
+        font-size: 3.6rem;
+    }
+    @include m.ultraWide{
+        font-size: 4.2rem;
+    }
+}
+
+h3{
+    font-size: 2.2rem;
+    @include m.tablet{
+        font-size: 2.4rem;
+    }
+    @include m.desktop{
+        font-size: 2.6rem;
+    }
+    @include m.bigScreen{
+        font-size: 3rem;
+    }
+    @include m.ultraWide{
+        font-size: 3.4rem;
+    }
+}
+
+h4{
+    font-size: 2rem;
+    @include m.tablet{
+        font-size: 2rem;
+    }
+    @include m.desktop{
+        font-size: 2.4rem;
+    }
+    @include m.bigScreen{
+        font-size: 2.8rem;
+    }
+    @include m.ultraWide{
+        font-size: 3.2rem;
+    }
+}
+
+p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    @include m.tablet{
+        font-size: 1.6rem;
+    }
+    @include m.desktop{
+        font-size: 1.8rem;
+    }
+    @include m.bigScreen{
+        font-size: 2rem;
+    }
+    @include m.ultraWide{
+        font-size: 2.2rem;
+    }
+}
+
+.sectores-content{
+    margin-top: 4rem;
 }

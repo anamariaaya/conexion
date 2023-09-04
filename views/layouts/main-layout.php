@@ -14,7 +14,29 @@
     <body>
         <?php
             include_once __DIR__ .'/../templates/header.php';
-            echo $contenido;
+            if(isset($sectores)):?>
+            <div class="contacto__top">
+                <div class="sectores wrapper">
+                    <div class="sectores-content">
+                        <?php echo $contenido; ?>
+                    </div>
+                    <div class="sectores-form">
+                        <?php
+                            include_once  __DIR__ .'/../templates/formulario.php';
+                        ?>
+                    </div>
+                </div>
+            </div>
+            
+            <?php else: 
+                echo $contenido;
+            endif;
+
+            if(!isset($inicio)):
+                include_once __DIR__ .'/../templates/banner-trabajo.php';
+            endif;
+
+
             include_once __DIR__ .'/../templates/contacto.php';
             include_once __DIR__ .'/../templates/footer.php'; 
         ?>
