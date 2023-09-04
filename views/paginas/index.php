@@ -95,7 +95,7 @@
     <h3 class="home-banner__title">Responsabilidad social empresarial</h3>
     <p class="home-banner__text">En Conexion Outsourcing SAS invertimos en nuestro talento humano, procurando  el mejoramiento de las competencias de nuestros colaboradores.</p>
     <p class="home-banner__text"><span>"Amamos lo que hacemos. Unimos esfuerzos para hacer de Colombia un país mejor"</span></p>
-    <a href="" class="btn-video">Ver video</a>
+    <button class="video-header-btn btn-video" id="video-responsability-btn">Ver video</button>
     </div>
 </div>
 
