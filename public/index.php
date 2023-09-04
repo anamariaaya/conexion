@@ -33,7 +33,12 @@ $router->get('/outsourcing-servicios-especializados',[PaginasController::class, 
 $router->get('/piscinero-salvavidas',[PaginasController::class, 'piscineroSalvavidas']);
 $router->get('/jardineria',[PaginasController::class, 'jardineria']);
 $router->get('/meseros',[PaginasController::class, 'meseros']);
-
 $router->get('/limpieza-habitaciones',[PaginasController::class, 'limpiezaHabitaciones']);
+
+//Footer
+$router->get('/reglamento-interno',[PaginasController::class, 'reglamentoInterno']);
+$router->get('/reglamento-higiene-seguridad',[PaginasController::class, 'reglamentoHigieneSeguridad']);
+$router->get('/politica-tratamiento-datos',[PaginasController::class, 'politicaTratamientoDatos']);
+
 
 $router->comprobarRutas();

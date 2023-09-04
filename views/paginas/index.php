@@ -215,6 +215,8 @@
         <img src="/build/img/logo-22.webp" alt="logo de cliente" loading="lazy">
         <img src="/build/img/logo-23.webp" alt="logo de cliente" loading="lazy">
     </div>
+
+    <p class="tCenter">Conexión Outsourcing SAS manifiesta que empleará los signos distintivos y marcas de terceros de manera referencial y efímera, por lo tanto no explotará comercialmente dichas marcas y su uso se reglamentará bajo las pautas del MANUAL PARA USO PARCIAL Y EFÍMERO DE SIGNOS DISTINTIVOS EN MEDIOS VIRTUALES.</p>
 </div>
 
 <?php

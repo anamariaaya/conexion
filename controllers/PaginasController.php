@@ -185,4 +185,34 @@ class PaginasController{
             'sectores' => $sectores
         ]);
     }
+
+    public static function reglamentoInterno(Router $router){
+        $paginas = true;
+        $main_title = 'Reglamento Interno de Trabajo';
+        $router->render('paginas/reglamento-interno',[
+            'titulo' => 'Reglamento Interno de Trabajo',
+            'main_title' => $main_title,
+            'paginas' => $paginas
+        ]);
+    }
+
+    public static function reglamentoHigieneSeguridad(Router $router){
+        $paginas = true;
+        $main_title = 'Reglamento de Higiene y Seguridad Industrial';
+        $router->render('paginas/reglamento-higiene-seguridad',[
+            'titulo' => 'Reglamento de Higiene y Seguridad Industrial',
+            'main_title' => $main_title,
+            'paginas' => $paginas
+        ]);
+    }
+
+    public static function politicaTratamientoDatos(Router $router){
+        $paginas = true;
+        $main_title = 'Políticas de privacidad, términos y condiciones de uso';
+        $router->render('paginas/politica-tratamiento-datos',[
+            'titulo' => 'Política de Tratamiento de Datos',
+            'main_title' => $main_title,
+            'paginas' => $paginas
+        ]);
+    }
 }

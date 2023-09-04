@@ -12,15 +12,27 @@
 
 <div class="grid-hotelero">
     <a href="/piscinero-salvavidas">
-        <img src="/build/img/image-piscinero.webp" alt="Piscinero y salvavidas" loading="lazy">
+        <div class="home-services__card">
+            <img class="home-services__image" src="/build/img/image-piscinero.webp" alt="imagen de piscinero salvavidas" loading="lazy"/>
+            <p class="home-services__text">Piscinero salvavidas</p>
+        </div>
     </a>
     <a href="/meseros">
-        <img src="/build/img/image-meseros.webp" alt="Meseros" loading="lazy">
+        <div class="home-services__card">
+            <img class="home-services__image" src="/build/img/image-meseros.webp" alt="imagen de meseros" loading="lazy"/>
+            <p class="home-services__text">Meseros</p>
+        </div>
     </a>
     <a href="/jardineria">
-        <img src="/build/img/image-jardineria.webp" alt="Jardinería" loading="lazy">
+        <div class="home-services__card">
+            <img class="home-services__image" src="/build/img/image-jardineria.webp" alt="imagen de jardineria" loading="lazy"/>
+            <p class="home-services__text">Jardinería</p>
+        </div>
     </a>
     <a href="/limpieza-habitaciones">
-        <img src="/build/img/image-limpieza.webp" alt="Limpieza de habitaciones" loading="lazy">
+        <div class="home-services__card">
+            <img class="home-services__image" src="/build/img/image-limpieza.webp" alt="imagen de limpieza de habitaciones" loading="lazy"/>
+            <p class="home-services__text">Limpieza de habitaciones</p>
+        </div>
     </a>
 </div>

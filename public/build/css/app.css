@@ -562,6 +562,18 @@ p {
   margin-top: 3rem;
 }
 
+.mTop-5 {
+  margin-top: 5rem;
+}
+
+.pBold {
+  font-weight: bold;
+}
+
+.tCenter {
+  text-align: center;
+}
+
 .image--small {
   width: 50%;
   margin: 2.5rem auto;
