@@ -215,4 +215,14 @@ class PaginasController{
             'paginas' => $paginas
         ]);
     }
+
+    public static function politicaAmbiental(Router $router){
+        $paginas = true;
+        $main_title = 'Política Ambiental';
+        $router->render('paginas/politica-ambiental',[
+            'titulo' => 'Política Ambiental',
+            'main_title' => $main_title,
+            'paginas' => $paginas
+        ]);
+    }
 }
