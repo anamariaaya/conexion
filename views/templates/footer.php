@@ -42,7 +42,7 @@
 
     </div>
     <div class="footer__links">
-        <a href="" class="footer__links__link">Política ambiental</a>
+        <a href="/politica-ambiental" class="footer__links__link">Política ambiental</a>
         <a href="/politica-tratamiento-datos" class="footer__links__link">política de tratamiento de datos</a>
         <a href="/reglamento-interno" class="footer__links__link">reglamento interno de trabajo</a>
         <a href="/reglamento-higiene-seguridad" class="footer__links__link">reglamento de higiene y seguridad industrial</a>

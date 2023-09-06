@@ -39,6 +39,7 @@ $router->get('/limpieza-habitaciones',[PaginasController::class, 'limpiezaHabita
 $router->get('/reglamento-interno',[PaginasController::class, 'reglamentoInterno']);
 $router->get('/reglamento-higiene-seguridad',[PaginasController::class, 'reglamentoHigieneSeguridad']);
 $router->get('/politica-tratamiento-datos',[PaginasController::class, 'politicaTratamientoDatos']);
+$router->get('/politica-ambiental',[PaginasController::class, 'politicaAmbiental']);
 
 
 $router->comprobarRutas();
